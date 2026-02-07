@@ -39,6 +39,8 @@ public class TalonFXMotor extends SubsystemBase {
     @Override
     public void periodic() {
         SmartDashboard.putNumber(myId + " rpm", getRPM());
+        SmartDashboard.putNumber(myId + " temperature", talonFx.getDeviceTemp().getValueAsDouble());
+        SmartDashboard.putNumber(myId + " output", talonFx.get());
     }
 
 }

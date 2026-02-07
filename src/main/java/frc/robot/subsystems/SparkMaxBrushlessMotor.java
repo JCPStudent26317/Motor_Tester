@@ -18,6 +18,8 @@ public class SparkMaxBrushlessMotor extends SubsystemBase {
     private final int myId;
 
     public SparkMaxBrushlessMotor(int id) {
+        sparkMaxConfig.smartCurrentLimit(25, 25);
+
         myId = id;
         sparkMax = new SparkMax(id, SparkMax.MotorType.kBrushless);
         sparkMax.configure(sparkMaxConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
@@ -38,5 +40,7 @@ public class SparkMaxBrushlessMotor extends SubsystemBase {
     @Override
     public void periodic() {
         SmartDashboard.putNumber(myId + " rpm", getRPM());
+        SmartDashboard.putNumber(myId + " temperature", sparkMax.getMotorTemperature());
+        SmartDashboard.putNumber(myId + " output", sparkMax.get());
     }
 }
