@@ -17,7 +17,7 @@ public class RobotContainer {
   private final TalonFXMotor shooter1 = new TalonFXMotor(50);
   private final TalonFXMotor shooter2 = new TalonFXMotor(51);
 
-  private final SparkMaxBrushlessMotor climber = new SparkMaxBrushlessMotor(4);
+  private final TalonFXMotor climber = new TalonFXMotor(3);
 
   private final CommandXboxController m_driverController =
       new CommandXboxController(OperatorConstants.kDriverControllerPort);
