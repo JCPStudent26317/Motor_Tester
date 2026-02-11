@@ -9,13 +9,13 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 
 public class RobotContainer {
-  private final TalonFXMotor intake = new TalonFXMotor(43);
-  private final TalonFXMotor magazineBottom = new TalonFXMotor(40); 
-  private final TalonFXMotor magazineTop = new TalonFXMotor(42); 
-  private final TalonFXMotor hopperTop = new TalonFXMotor(41);
-  private final TalonFXMotor hopperBottom = new TalonFXMotor(44);
-  private final TalonFXMotor shooter1 = new TalonFXMotor(50);
-  private final TalonFXMotor shooter2 = new TalonFXMotor(51);
+  // private final TalonFXMotor intake = new TalonFXMotor(43);
+  // private final TalonFXMotor magazineBottom = new TalonFXMotor(40); 
+  // private final TalonFXMotor magazineTop = new TalonFXMotor(42); 
+  // private final TalonFXMotor hopperTop = new TalonFXMotor(41);
+  // private final TalonFXMotor hopperBottom = new TalonFXMotor(44);
+  // private final TalonFXMotor shooter1 = new TalonFXMotor(50);
+  // private final TalonFXMotor shooter2 = new TalonFXMotor(51);
 
   private final TalonFXMotor climber = new TalonFXMotor(3);
 
