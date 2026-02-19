@@ -25,7 +25,7 @@ public class TalonFXMotor extends SubsystemBase {
 
     public Command setOutput(DoubleSupplier output) {
         return Commands.run(() -> {
-            talonFxOut.Output = output.getAsDouble();   
+            talonFxOut.Output = Math.abs(output.getAsDouble()) < 0.03 ? 0 : output.getAsDouble();   
             talonFx.setControl(talonFxOut);   
         },
         this

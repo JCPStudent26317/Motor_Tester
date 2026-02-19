@@ -15,10 +15,10 @@ public class RobotContainer {
   // private final TalonFXMotor hopperTop = new TalonFXMotor(41);
   // private final TalonFXMotor hopperBottom = new TalonFXMotor(44);
   
-  private final TalonFXMotor shooterTransition = new TalonFXMotor(0);
+  private final TalonFXMotor shooterTransition = new TalonFXMotor(12);
 
-  private final TalonFXMotor shooter1 = new TalonFXMotor(50);
-  private final TalonFXMotor shooter2 = new TalonFXMotor(51);
+  private final TalonFXMotor shooter1 = new TalonFXMotor(11);
+  private final TalonFXMotor shooter2 = new TalonFXMotor(10);
 
   // private final TalonFXMotor climber = new TalonFXMotor(3);
 
